@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secu 9 Corre - Maratón Escolar</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para íconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandBlue: "#0055ff",
+              brandOrange: "#ff5500",
+              brandGreen: "#10b981",
+              darkBg: "#0f172a",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-brandOrange selection:text-white"
+  >
+    <!-- Navegación -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-2">
+          <span
+            class="bg-brandOrange text-white font-black px-2 py-1 rounded-md text-xl italic"
+            >S9</span
+          >
+          <span class="font-black text-xl tracking-wider text-white"
+            >SECU 9 <span class="text-brandOrange">CORRE</span></span
+          >
+        </div>
+        <div class="hidden md:flex gap-6 font-semibold text-slate-300">
+          <a href="#inicio" class="hover:text-brandOrange transition">Inicio</a>
+          <a href="#info" class="hover:text-brandOrange transition"
+            >Información</a
+          >
+          <a href="#inscripcion" class="hover:text-brandOrange transition"
+            >Inscripción</a
+          >
+        </div>
+        <a
+          href="#inscripcion"
+          class="bg-brandOrange hover:bg-orange-600 text-white font-bold px-4 py-2 rounded-full transition shadow-lg shadow-orange-500/20 text-sm"
+        >
+          ¡Inscribirme!
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="inicio"
+      class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden flex items-center min-h-screen"
+    >
+      <!-- Fondos decorativos -->
+      <div
+        class="absolute -top-24 -left-24 w-96 h-96 bg-brandBlue/20 rounded-full blur-3xl"
+      ></div>
+      <div
+        class="absolute top-1/2 -right-24 w-96 h-96 bg-brandOrange/20 rounded-full blur-3xl"
+      ></div>
+
+      <div class="max-w-4xl mx-auto text-center px-4 relative z-10">
+        <span
+          class="inline-block bg-brandGreen/20 text-brandGreen font-bold px-4 py-1.5 rounded-full text-sm mb-6 border border-brandGreen/30"
+        >
+          🏃‍♂️ Gran Evento Deportivo Escolar
+        </span>
+        <h1
+          class="text-5xl md:text-7xl font-black italic tracking-tight uppercase mb-6 leading-none"
+        >
+          Superá tus límites en
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-indigo-700 to-blue-900"
+            >Secu 9 Corre</span
+          >
+        </h1>
+        <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+          ¡Ponete las zapatillas y sumate a la jornada deportiva del año!
+          Diversión, compañerismo y superación en un solo lugar.
+        </p>
+
+        <!-- Tarjetas breves de datos clave -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto mb-10 text-left"
+        >
+          <div
+            class="bg-slate-800/80 backdrop-blur border border-slate-700 p-4 rounded-xl flex items-center gap-4"
+          >
+            <div
+              class="w-12 h-12 bg-brandBlue/20 rounded-lg flex items-center justify-center text-brandBlue text-xl"
+            >
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-medium">Fecha y Hora</p>
+              <p class="font-bold text-slate-200">
+                Sábado 30 de Octubre - 09:00 hs
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-slate-800/80 backdrop-blur border border-slate-700 p-4 rounded-xl flex items-center gap-4"
+          >
+            <div
+              class="w-12 h-12 bg-brandOrange/20 rounded-lg flex items-center justify-center text-brandOrange text-xl"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-medium">Lugar</p>
+              <p class="font-bold text-slate-200">Campo municipal de Doma</p>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#inscripcion"
+          class="inline-flex items-center gap-3 bg-gradient-to-r from-brandOrange to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-extrabold text-lg px-8 py-4 rounded-full transition shadow-xl shadow-orange-500/25 transform hover:-translate-y-0.5"
+        >
+          Asegurar mi lugar <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Información del Evento -->
+    <section
+      id="info"
+      class="py-20 bg-slate-950/60 border-y border-slate-800/60"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-extrabold uppercase italic mb-4">
+            Información del Evento
+          </h2>
+          <p class="text-slate-400">
+            Todo lo que necesitás saber antes de estar listo en la línea de
+            largada.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Tarjeta 1 -->
+          <div
+            class="bg-slate-900 border border-slate-800 p-6 rounded-2xl relative overflow-hidden group hover:border-brandBlue/50 transition"
+          >
+            <div
+              class="w-12 h-12 bg-brandBlue/10 text-brandBlue rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform"
+            >
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Recorrido Adaptado</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Un circuito interno e interurbano seguro de 3 km diseñado para
+              todos los niveles académicos. ¡Caminá, trotá o corré a tu propio
+              ritmo!
+            </p>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div
+            class="bg-slate-900 border border-slate-800 p-6 rounded-2xl relative overflow-hidden group hover:border-brandOrange/50 transition"
+          >
+            <div
+              class="w-12 h-12 bg-brandOrange/10 text-brandOrange rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform"
+            >
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Cronograma</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              08:30 HS: Acreditación y entrega de dorsales.<br />
+              09:00 HS: Entrada en calor grupal.<br />
+              09:30 HS: Largada oficial.<br />
+              11:00 HS: Premiación y cierre.
+            </p>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div
+            class="bg-slate-900 border border-slate-800 p-6 rounded-2xl relative overflow-hidden group hover:border-brandGreen/50 transition"
+          >
+            <div
+              class="w-12 h-12 bg-brandGreen/10 text-brandGreen rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform"
+            >
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Concientización</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              evento deportivo y solidario organizado por alumnos y docentes del
+              Colegio Secundario N°9 de El Calafate, en el marco del Día Mundial
+              de la Lucha contra el Cáncer de Mama.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de Inscripción -->
+    <section id="inscripcion" class="py-20 relative">
+      <div class="max-w-2xl mx-auto px-4">
+        <div
+          class="bg-slate-800/60 backdrop-blur-md border border-slate-700 p-8 md:p-10 rounded-3xl shadow-2xl"
+        >
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-black italic uppercase text-white mb-2">
+              Formulario de Inscripción
+            </h2>
+            <p class="text-slate-400 text-sm">
+              Completá tus datos para registrarte en la maratón.
+            </p>
+          </div>
+
+          <!-- Mensaje de éxito/error -->
+          <div
+            id="statusMessage"
+            class="hidden mb-6 p-4 rounded-xl text-center font-semibold text-sm"
+          ></div>
+
+          <form id="maratonForm" class="space-y-6">
+            <!-- Nombre y Apellido -->
+            <div>
+              <label
+                for="nombre"
+                class="block text-sm font-semibold text-slate-300 mb-2"
+                >Nombre y Apellido *</label
+              >
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ej: Juan Pérez"
+                required
+                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brandOrange focus:ring-1 focus:ring-brandOrange transition"
+              />
+            </div>
+
+            <!-- Curso / Año -->
+            <div>
+              <label
+                for="curso"
+                class="block text-sm font-semibold text-slate-300 mb-2"
+                >Curso / Año *</label
+              >
+              <select
+                id="curso"
+                name="curso"
+                required
+                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-brandOrange focus:ring-1 focus:ring-brandOrange transition"
+              >
+                <option value="" disabled selected>Seleccioná tu curso</option>
+                <option value="1º Año">1º Año</option>
+                <option value="2º Año">2º Año</option>
+                <option value="3º Año">3º Año</option>
+                <option value="4º Año">4º Año</option>
+                <option value="5º Año">5º Año</option>
+                <option value="Docente / Personal">
+                  Docente / Personal del Colegio
+                </option>
+              </select>
+            </div>
+
+            <!-- Edad -->
+            <div>
+              <label
+                for="edad"
+                class="block text-sm font-semibold text-slate-300 mb-2"
+                >Edad *</label
+              >
+              <input
+                type="number"
+                id="edad"
+                name="edad"
+                placeholder="Ej: 15"
+                min="10"
+                max="90"
+                required
+                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brandOrange focus:ring-1 focus:ring-brandOrange transition"
+              />
+            </div>
+
+            <!-- Botón Enviar -->
+            <button
+              type="submit"
+              id="submitBtn"
+              class="w-full bg-gradient-to-r from-brandOrange to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-extrabold py-4 rounded-xl transition shadow-lg shadow-orange-500/20 uppercase tracking-wider text-sm flex items-center justify-center gap-2"
+            >
+              <span>Confirmar Inscripción</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer
+      class="py-8 bg-slate-950 border-t border-slate-800/80 text-center text-slate-500 text-sm"
+    >
+      <p>© Secu 9 Corre - Maratón Escolar. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Lógica JavaScript -->
+    <script>
+      const form = document.getElementById("maratonForm");
+      const statusMessage = document.getElementById("statusMessage");
+      const submitBtn = document.getElementById("submitBtn");
+
+      if (form && statusMessage && submitBtn) {
+        const GOOGLE_SCRIPT_URL =
+          "https://script.google.com/macros/s/AKfycbyvVMTGXnTj1FeaJL8Vk648xQ4N6Ck8Ed7Ph62z7YXlRovH09kS4stXpib_UIuFwVQ/exec";
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const nombre = document.getElementById("nombre").value.trim();
+          const curso = document.getElementById("curso").value;
+          const edad = parseInt(document.getElementById("edad").value, 10);
+
+          if (!nombre || !curso || Number.isNaN(edad)) {
+            mostrarMensaje("Por favor, completá todos los campos.", "error");
+            return;
+          }
+
+          if (edad < 10 || edad > 90) {
+            mostrarMensaje("Ingresá una edad válida.", "error");
+            return;
+          }
+
+          submitBtn.disabled = true;
+          submitBtn.innerHTML =
+            '<span>Enviando...</span> <i class="fa-solid fa-spinner fa-spin"></i>';
+
+          const datos = { nombre, curso, edad };
+
+          fetch(GOOGLE_SCRIPT_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(datos),
+          })
+            .then(() => {
+              form.reset();
+              mostrarMensaje(
+                "Solicitud enviada. Muchas gracias por inscribirte. Te esperamos en la maratón.",
+              );
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              mostrarMensaje(
+                "Ocurrió un error al guardar la inscripción. Intentalo de nuevo.",
+                "error",
+              );
+            })
+            .finally(() => {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML =
+                '<span>Confirmar Inscripción</span> <i class="fa-solid fa-paper-plane"></i>';
+            });
+        });
+      }
+
+      function mostrarMensaje(texto, tipo) {
+        statusMessage.classList.remove(
+          "hidden",
+          "bg-red-500/20",
+          "text-red-300",
+          "border-red-500/30",
+          "bg-emerald-500/20",
+          "text-emerald-300",
+          "border-emerald-500/30",
+        );
+
+        if (tipo === "exito") {
+          statusMessage.classList.add(
+            "bg-emerald-500/20",
+            "text-emerald-300",
+            "border",
+            "border-emerald-500/30",
+          );
+        } else {
+          statusMessage.classList.add(
+            "bg-red-500/20",
+            "text-red-300",
+            "border",
+            "border-red-500/30",
+          );
+        }
+
+        statusMessage.textContent = texto;
+      }
+    </script>
+  </body>
+</html>
